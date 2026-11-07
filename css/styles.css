@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: #EDF2F4
+}
+
+.cabecalho {
+    background-color: #2B2D42;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 0 2%;
+
+    height: 80px;
+    width: 100vw;
+    /*width: 1440px; */
+}
+
+#logo-link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    background-color: transparent;
+}
+
+#logo h1 {
+    background-color: transparent;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    transform: translateY(4px);
+}
+
+.cabecalho a {
+
+    background-color: transparent;
+    border: transparent;
+}
+
+.cabecalho img {
+    background-color: transparent;
+    height: 32px;
+    width: auto;
+
+}
+
+.adicionar-review img {
+    transition: box-shadow 0.3s linear; 
+}
+
+.adicionar-review img:hover {
+    border-radius: 12px;
+    box-shadow: 0px 4px 3px black;
+}
+
+main {
+    background-color: #EDF2F4;
+}
+
+.filmes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    column-gap: 60px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Celulares */
+@media (max-width: 540px) {
+    .filmes {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 25px;
+
+        padding: 0 15px;
+    }
+}
+
+.filme .title {
+    width: 200px;
+    height: 18px;
+
+    margin-top: 19px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    text-align: center;
+
+    background-color: transparent;
+
+    color: black;
+    font-family: Arial, sans-serif;
+
+
+}
+
+.filme {
+
+
+    display: flex;
+    flex-direction: column;
+
+    width: 200px;
+    height: 396px;
+
+    margin-top: 20px;
+
+    background-color: #F4F5F6;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    border: 1px solid #adadad;
+
+    box-shadow: 0 4px 3px #00000040; 
+
+    text-decoration: none;
+    
+    transition: box-shadow 0.3s ease-in-out;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.filme:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.poster {
+    flex-shrink: 0;
+    width: 198px;
+    height: 297px;
+}
+
+.star {
+    width: 156px;
+    height: 24px;
+
+    margin-top: 20px;
+
+    flex-shrink: 0;
+
+    align-self: center;
+
+    background-color: transparent;
+}
+
+footer {
+    background-color: #EDF2F4
+}
+
+footer p {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+#new-review-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    height: 41px;
+    width: auto;
+
+    text-align: center;
+
+}
+
+#review-layout {
+    height: 681px;
+    width: 90vw;
+
+    margin: 0 auto;
+
+    background-color: #F4F5F6;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 4px #00000040; 
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 40px;
+
+    flex-direction: column;
+}
+
+.review-section {
+    background-color: transparent;
+    width: 100%;
+}
+
+.review-section h4 {
+    height: 28px;
+    width: auto;
+
+    background-color: transparent;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#movie-title-input {
+    height: 45px;
+    
+    border-radius: 12px;
+    border: 1px solid #E8EAED;
+
+    background-color: #FFFFFF;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+}
+
+#movie-url-input {
+        height: 45px;
+    
+    border-radius: 12px;
+    border: 1px solid #E8EAED;
+
+    background-color: #FFFFFF;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+}
+
+#star-and-date {
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+#star-rating {
+    background-color: transparent;
+}
+
+#watched-date {
+    background-color: transparent;
+}
+
+#rating {
+    height: 45px;
+    width: 35vw;
+
+    border-radius: 12px;
+    border: 0;
+
+    border: 1px solid #E8EAED;
+
+
+    background-color: #FFFFFF;
+}
+
+#review-date {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 12px;
+
+    border: 1px solid #E8EAED;
+
+    height: 45px;
+    width: 35vw;
+}
+
+#review-area {
+    background-color: transparent;
+    border: 1px solid #E8EAED;
+    border-radius: 12px;
+
+    width: 100%;
+    height: 170px;
+
+    background-color: #FFFFFF;
+}
+
+#add-review-button {
+    border: 1px solid #E8EAED;
+    border-radius: 12px;
+
+    height: 50px;
+    width: 100%;
+
+    background-color: #2B2D42;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#review-frame {
+    height: auto;
+    width: 80vw; /** **/
+
+    background-color: #F4F5F6;
+    box-shadow: 0 4px 4px #00000040;
+
+    margin: 2% auto;
+
+    border-radius: 12px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    
+}
+
+#review-frame-poster {
+    width: 25vw;
+    height: auto;
+}
+
+#review-frame-information {
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-left: 0;
+
+}
+#review-frame-information p, #review-frame-information strong, #review-frame-information img, #review-frame-information h2 {
+    background-color: transparent;
+}

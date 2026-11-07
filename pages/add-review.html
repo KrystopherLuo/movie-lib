@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-review</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="../index.html" id="logo-link">
+            <div id="logo">
+                <img src="../images/mlib-icon.svg" alt="mlib-icon">
+                <h1>MLib</h1>
+            </div>
+        </a>
+
+        <a href="../pages/add-review.html" class="adicionar-review">
+            <img src="../images/add-review.svg" alt="adicionar filme">
+        </a>
+    </header>
+
+    <main>
+        <h1 id="new-review-title">New Review</h1>
+
+        <div id="review-layout">
+            <div class="review-section">
+                <h4>Movie Name</h4>
+
+                <div >
+                    <input type="text" placeholder="Enter the movie title" id="movie-title-input">
+                </div>
+            </div>
+
+            <div class="review-section">
+                <h4>Poster URL</h4>
+
+                <div >
+                    <input type="text" placeholder="Paste image URL (jpg or png)" id="movie-url-input">
+                </div>
+            </div>
+
+            <div class="review-section" id="star-and-date">
+                <div id="star-rating">
+                    <h4>Star Rating</h4>
+
+                    <select id="rating">
+                        <option value="0">0 star</option>
+                        <option value="1">1 star</option>
+                        <option value="2">2 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </div>
+                <div id="watched-date">
+                    <h4>Watched-Date</h4>
+
+                    <input type="date" id="review-date">
+                </div>
+            </div>
+
+            <div class="review-section">
+                <h4>My Review</h4>
+
+                <input type="textarea" id="review-area">
+            </div>
+
+            <button id="add-review-button">Add</button>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 MLib – My Movie Library</p>
+    </footer>
+</body>
+</html>
